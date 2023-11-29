@@ -1,0 +1,25 @@
+.wrapper{  /*umschließt alles*/
+    display: flex; /*layoutmethode*/
+    height: 100vh; /*visualheight*/
+    *flex-direction: row; /*links nach rechts, reihe in html relevant*/
+    gap: 0.5rem; /*distanz zwischen elementen*/
+}
+
+aside{
+    flex: 1; /*1/§ zu 2/3(main)*/
+    background-color: gray;
+    display: flex; /*Layoutmethode*/
+    flex-direction: column; /*von oben nach unten*/
+    gap: 0.5rem;
+}
+
+main{
+    flex: 2; /*zwei flex, 2mal den Platz eines elementes*/
+    background-color: black;
+}
+
+input[type='color'],
+button {  /*input und button ausgewählt*/
+    width: 100%;
+    height: 2rem;
+}
