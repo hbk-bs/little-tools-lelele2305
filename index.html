@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+    <section class="tools-board">
+        <div class="row">
+            <label class="title">Options</label>
+               <ul class="options">
+                <li class="option active tool" id="brush">
+                    <span>Brush</span>
+                </li>
+                <li class="option tool" id="eraser">
+                    <span>Eraser</span>
+                </li>
+                <li class="option">
+                    <input type="range" id="size-slider" min="1" max="50" value="5">
+                </li>
+              </ul>
+        </div>
+        <div class="row colors">
+            <label class="title">Colors</label>
+            <ul class="options">
+                <li class="option"></li>
+                <li class="option selected"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"></li> 
+                <li class="option">
+                   <input type="color" id="color-picker" value="rgb(37, 107, 84)">
+                </li>
+            </ul>
+        </div>
+        <div class="row buttons">
+            <button class="clear-canvas">Clear</button>
+            <button class="save">Save</button>
+        </div>
+    </section>
+    <section class="drawing-board">
+        <canvas></canvas>
+    </section>
+    
+   </div>
+    
+
+
+    <script src="/sketch.js"></script>
+</body>
+</html>
